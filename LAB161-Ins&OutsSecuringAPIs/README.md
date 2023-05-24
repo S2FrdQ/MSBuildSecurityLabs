@@ -6,6 +6,10 @@ During the lab experience you will publish an API using Azure API Management Ser
 
 By the end of this session, you'll have a clear understanding of how to use Defender for APIs to provide full lifecycle API protection in Azure, helping you safeguard your cloud applications against attacks.
 
+## Prerequisite ##
+- Create a resource group (In this lab, we will use RG1) on Azure portal: https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
+
+
 ## MODULE 1: PUBLISH AN API WITHIN API MANAGEMENT ##
 
 In this module, we will be publishing APIs within Azure API Management. Azure API Mangement provides a method to publish any internal and external APIs in a secure and consistent method. With Azure API Management enabled, all requests from client applications first reach the API gateway (a component of API management), which then forwards them to respective backend services. The API gateway acts as a facade to the backend services, allowing API providers to abstract API implementations and evolve backend architecture without impacting API consumers. The gateway enables consistent configuration of routing, security, throttling, caching, and observability. During this lab, we will not be configuring typical security policies in Azure API Management (such as rate-limiting, jwt-token validation); however, if you are interested in learning more, please visit here: https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts
@@ -19,12 +23,18 @@ Now let's start by publishing a new API within Azure API management. In this cas
 ![apimsearch](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/061f9539-c37d-487f-95fd-4beacb5abab2)
 
 
-3. Go to Azure API Management Portal and select the *Conference Demo* Azure API Management Service that is created and available as part of this lab. 
+3. Go to Azure API Management Portal and select *Create API Management Service*. Fill the required details and select the resource group you created and click *Review + Create*.
 
-![apimselect](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/fbf35aba-38a5-43f7-b7f9-dc6844fe98a8)
+![createapimservice](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/16ff6ea3-392f-4611-aff5-f5215fd62820)
 
 
-4. In the left navigation pane of your API Management instance, select APIs
+![createapim2](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/a0458f05-b271-4582-9513-71f018b263e3)
+
+
+Make sure to select the *Developer Pricing Tier*
+*Note: This should take around 30 - 40 minutes to create*
+
+4. After creation of the API Management service, navigate to the left navigation pane of your API Management instance, select APIs
 
 ![66xqb7jh](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/06afe38d-48e5-467c-98d3-742e0d993394)
 
