@@ -32,7 +32,7 @@ Now let's start by publishing a new API within Azure API management. In this cas
 
 
 Make sure to select the *Developer Pricing Tier*
-*Note: This should take around 30 - 40 minutes to create*
+*Note: This should take around 30 - 40 minutes to create and activate the API Management Service.*
 
 4. After creation of the API Management service, navigate to the left navigation pane of your API Management instance, select APIs
 
