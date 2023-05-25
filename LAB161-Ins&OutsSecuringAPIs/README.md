@@ -95,9 +95,21 @@ While we wait for your new API results to become visible in Defender for Cloud, 
 
 1. Go to Azure DevOps project using this link - https://dev.azure.com, and login using your Azure credentials once prompted and create a private project. Clone the https://github.com/S2FrdQ/MSBuildSecurityLabs.git repo.
 
-2. Make sure your default branch is Repo1. 
+2. Explore the various banches and make sure you have main, repo1, base/IaC branches.
 
-3. This lab will use the Microsoft Security Azure DevOps extension, specifically the infrastructure as code (IaC) template scanner. The extension has already been installed on the repository, and there is an existing pipeline workflow file (“azure-pipelines.yml”) which will run the extension security scans during for each commit to the main branch.
+3. This lab will use the Microsoft Security Azure DevOps extension, specifically the infrastructure as code (IaC) template scanner. Install the Microsoft Security DevOps Extension from the marketplace.
+
+![marketplace](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/d807b1aa-7b5e-4d21-8302-c23c9249394b)
+
+Search for *Microsoft Security DevOps* on the Marketplace and select the Microsoft Security DevOps extension, then *Get it Free*.
+![microsoftdevopsextension](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/e416fc27-3fb3-4eff-8241-7d1908944686)
+
+![msdoextension](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/46f6c47b-bc37-4c1e-9430-5e6967004918)
+
+Install the extension on your organization then go back to your Azure DevOps organization to continue with the module.
+
+
+There is an existing pipeline workflow file (“azure-pipelines.yml”) which will run the extension security scans during each commit to the main branch.
 
 ![etc1okml](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/21370265-a22a-4c7c-90d1-bf595f7a27d4)
 
