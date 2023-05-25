@@ -28,7 +28,8 @@ Now let's start by publishing a new API within Azure API management. In this cas
 ![createapimservice](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/16ff6ea3-392f-4611-aff5-f5215fd62820)
 
 
-![createapim2](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/a0458f05-b271-4582-9513-71f018b263e3)
+![createapim2](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/6fc5a9b0-52dd-4e4a-9d9d-74c7514d2ae0)
+
 
 
 Make sure to select the *Developer Pricing Tier*
@@ -46,9 +47,9 @@ Make sure to select the *Developer Pricing Tier*
 7. Enter the following values:
 
 - OpenAPI specification --> https://conferenceapi.azurewebsites.net?format=json
-- Display name --> Labs User X API (where X is your Lab User ID)
+- Display name --> Labs User 1 API (any Display name)
 - Name -->  Once you enter the preceding Display Name, API Management fills out this field based on the JSON.
-- API URL suffix --> labID_X (where X is your Lab User ID)
+- API URL suffix --> labID_1 (customize)
 
 ![newapi](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/b2236726-75df-4e81-924b-c146b142340b)
 
@@ -85,7 +86,7 @@ This completes the first module, for publishing a new API in Azure API Managemen
 ![policy](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/55255964-9035-494b-9c4f-88ec4c7194cd)
 
 
-8. Here you can see a full set of inbound policies that can be enabled on the Azure API Management service. For Inbound Processing, these policies will be applied to all requests coming into Azure API Mangement, similar policies can be sent for outgoing responses as well, through outbound policies. Many of these include security related policies, such as enforcing rate limiting or enforcing authentication via validating jwt-token policies. For the scope of this lab, we will not be enabling any of these policies test, though please feel free to look over the available policies. More details are available here: https://learn.microsoft.com/azure/api-management/transform-api
+8. Here you can see a full set of inbound policies that can be enabled on the Azure API Management service. For Inbound Processing, these policies will be applied to all requests coming into Azure API Management, similar policies can be sent for outgoing responses as well, through outbound policies. Many of these include security related policies, such as enforcing rate limiting or enforcing authentication via validating jwt-token policies. For the scope of this lab, we will not be enabling any of these policies test, though please feel free to look over the available policies. More details are available here: https://learn.microsoft.com/azure/api-management/transform-api
 
 ![4gvtzfn4](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/f001d5b1-850f-46f7-a472-0d203d084d69)
 
@@ -96,7 +97,7 @@ You have completed this module. Please note, it may take between 20-30 minutes f
 
 While we wait for your new API results to become visible in Defender for Cloud, let's switch gears and now focus on how to enable security in early stages of the pipeline. Azure Resource Manager (ARM) templates are a very popular form of “infrastructure as code”, a process used to programmatically create, update, and delete Azure resources. During this exercise, you will be remediating security misconfigurations embedded within an ARM deployment template.
 
-1. Go to Azure DevOps project using this link - https://dev.azure.com/ContosoDfDBuild2023/Lab161, and login using your Azure credentials once prompted
+1. Go to Azure DevOps project using this link - https://dev.azure.com, and login using your Azure credentials once prompted and create a private project. Clone the https://github.com/microsoft/MSBuildSecurityLabs.git repo.
 
 2. Under Repos, select the LabUser_"X" where "X" corresponds to your VM Login ID. For example, if your VM login ID is 22, select LabUser_22
 
