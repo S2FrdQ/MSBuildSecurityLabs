@@ -97,12 +97,9 @@ You have completed this module. Please note, it may take between 20-30 minutes f
 
 While we wait for your new API results to become visible in Defender for Cloud, let's switch gears and now focus on how to enable security in early stages of the pipeline. Azure Resource Manager (ARM) templates are a very popular form of “infrastructure as code”, a process used to programmatically create, update, and delete Azure resources. During this exercise, you will be remediating security misconfigurations embedded within an ARM deployment template.
 
-1. Go to Azure DevOps project using this link - https://dev.azure.com, and login using your Azure credentials once prompted and create a private project. Clone the https://github.com/microsoft/MSBuildSecurityLabs.git repo.
+1. Go to Azure DevOps project using this link - https://dev.azure.com, and login using your Azure credentials once prompted and create a private project. Clone the https://github.com/S2FrdQ/MSBuildSecurityLabs.git repo.
 
-2. Under Repos, select the LabUser_"X" where "X" corresponds to your VM Login ID. For example, if your VM login ID is 22, select LabUser_22
-
-![la4r43l4](https://github.com/S2FrdQ/MSBuildSecurityLabs/assets/6592423/fc84dd8f-f371-4a0c-b340-aafd9ae67b70)
-
+2. Make sure your default branch is Repo1. 
 
 3. This lab will use the Microsoft Security Azure DevOps extension, specifically the infrastructure as code (IaC) template scanner. The extension has already been installed on the repository, and there is an existing pipeline workflow file (“azure-pipelines.yml”) which will run the extension security scans during for each commit to the main branch.
 
